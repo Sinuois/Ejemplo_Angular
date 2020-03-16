@@ -16,6 +16,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { BodyComponent } from './components/body/body.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HeroesComponent,
     CarouselComponent,
     BodyComponent,
-    HeroeComponent
+    HeroeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
