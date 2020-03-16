@@ -24,10 +24,14 @@ export class HeroesService {
   ];
 
   constructor() { }
-
+  //retorna todos los heroes existentes
   public getHeroes() {
     return this.heroes;
   }
+  //retorna sólo un heroe
+  public getHeroe( indice: string) {
+    return this.heroes[indice];
+}
 
 }
 

@@ -2,7 +2,7 @@
 <br>
 
 <div class="container">
-    <!-- Card que contiene a heroe -->
+    <!-- Card que contiene a cada heroe -->
     <div class="card-columns">
         <div class="card animated fadeIn fast" style="width: 18rem;" *ngFor="let heroe of heroes; let i=index">
             <img [src]="heroe.img" class="card-img-top" alt="heroe.nombre">
@@ -10,10 +10,7 @@
               <h5 class="card-title">{{ heroe.nombre }}</h5>
               <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
             </div>
-            <a class= "btn btn-outline-primary btn-block">Ver más</a>
+            <a [routerLink]="['/heroe', i]" class= "btn btn-outline-primary btn-block">Ver más</a>
         </div>
     </div>
-
-    
-
 </div>
